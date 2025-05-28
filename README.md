@@ -7,6 +7,7 @@ A modern Todo application built with React, TypeScript, and Vite.
 - Fast development with Vite
 - Pixel art style UI
 - Gamified task management
+- Test commit to verify GitHub connection
 
 ## Tech Stack
 - React
