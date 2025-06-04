@@ -11,6 +11,7 @@ const ProgressBar: React.FC<Props> = ({ todos }) => {
     const percentage = totalCount === 0 ? 0 : (completedCount / totalCount) * 100;
   return (
     <div className="progress-container">
+        <div className="progress-container-text">Progressss Bar</div>
       <div className="progress-bar">
         <div
           className="progress-fill"

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,7 +12,19 @@ import Clock from './components/Clock.tsx'
 const App: React.FC = ()=> {
 
   const [todo, setTodo] = useState<string>("");
-  const [todos,setTodos] = useState<Todo[]>([]);
+  const [todos, setTodos] = useState<Todo[]>(() => {
+    // Load todos from localStorage on initial render
+    const savedTodos = localStorage.getItem('todos');
+    if (savedTodos) {
+      return JSON.parse(savedTodos);
+    }
+    return [];
+  });
+  
+  // Save todos to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
   
   const handleAdd = (e: React.FormEvent) =>{
     e.preventDefault();
@@ -26,8 +38,9 @@ const App: React.FC = ()=> {
   console.log(todos);
   return (
     <div className="App">
-      <div className="heading container">
+      <div className="heading-container">
       <div className="heading">Let's Get Things Done!</div>
+      <h2>────୨ৎ────</h2>
       <Clock />
       </div>
       <div className="main-container">

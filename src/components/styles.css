@@ -20,6 +20,17 @@
 .weathertext{
     text-align: center;
     margin: 4px 0;
+    
+}
+
+.weatherhead{
+    color: #1b2112;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.weatherwidget{
+    padding-bottom: 40px;
 }
 
 
@@ -65,9 +76,10 @@
 }
 .todos_single--text {
   flex: 1;
-  padding: 5px;
+  
   border: none;
-  font-size: 20px;
+  font-size: 17px;
+  /* i like 15 px for the text todo better */
 }
 input::placeholder {
   color: #9caf6c;
@@ -79,6 +91,8 @@ input::placeholder {
 
  .icon{
     color: #4c5a31;
+    width: 15px;
+    height: 15px;
  }
 
  .icons{
@@ -110,6 +124,15 @@ input::placeholder {
   max-width: 400px;
   margin: 20px auto;
   text-align: center;
+  padding-bottom: 40px;
+}
+
+.progress-container-text{
+  width:50%;
+  max-width: 400px;
+  margin: 5px auto;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .progress-bar {
@@ -124,7 +147,7 @@ input::placeholder {
 
 .progress-fill {
   height: 100%;
-  background-color: #4c5a31;
+  background-color:  #9caf6c;
   transition: width 0.3s ease-in-out;
 }
 
@@ -139,14 +162,6 @@ input::placeholder {
   font-size: 50px;
   font-family: "Elsie", serif;
   margin-top: 0px;
-  margin-bottom:40px;
+  padding-bottom: 60px;
 }
 
-.leafy{
-    margin-top: 30px;
-    width: 120px;
-    height:120px;
-    display: "block";
-    margin: auto;
-
-}

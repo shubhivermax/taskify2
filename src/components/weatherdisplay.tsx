@@ -56,18 +56,19 @@ const WeatherDisplay = () => {
   if (error) return <div>{error}</div>;
 
   return (
-    <div className="p-2 rounded-lg bg-blue-100 text-blue-900 shadow-md max-w-xs mt-2">
-      <h2 className="text-lg font-semibold mb-1">Weather in {weather.name}</h2>
-      <p className='weathertext'>🌡 Temperature: {weather.main.temp} °C</p>
-      <p className='weathertext'>💧 Humidity: {weather.main.humidity}%</p>
-      <p className="weathertext">☁️ Condition: {weather.weather[0].description}</p>
-      <img src={leafImage} alt="Leaf" className="leafy" style={{ width: "120px", height: "120px", display: "block", margin: "0 auto" }}/>
+    <div className="weatherwidget">
+      <h2 className="weatherhead">Weather in {weather.name}</h2>
+      <p className='weathertext'>⋆.ೃ࿔⛈༄ Temperature: {weather.main.temp} °C</p>
+      <p className='weathertext'> ˘꒷꒦˘꒷Humidity: {weather.main.humidity}%</p>
+      <p className="weathertext">⋆｡°•☁︎Condition: {weather.weather[0].description}</p>
+      
     </div>
   );
 };
 
 /*
 style={{ width: "120px", height: "120px", display: "block", margin: "0 auto" }}
+<img src={leafImage} alt="Leaf" className="leafy" style={{ width: "120px", height: "120px", display: "block", margin: "0 auto" }}/> 
 */
 
 export default WeatherDisplay;

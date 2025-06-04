@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/model.ts","./src/vite-env.d.ts","./src/components/clock.tsx","./src/components/inputfeild.tsx","./src/components/progressbar.tsx","./src/components/singletodo.tsx","./src/components/todolist.tsx","./src/components/weatherdisplay.tsx","./vite.config.ts"],"version":"5.8.3"}

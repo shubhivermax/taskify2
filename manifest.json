@@ -6,9 +6,7 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "icons": {
-    "128": "icon.png"
-  },
+
   "permissions": [],
   "action": {
     "default_popup": "index.html"

@@ -26,15 +26,15 @@ body {
   display: flex;
   flex-direction: column; /* Stack title and clock vertically */
   align-items: center;
-  gap: 30px; 
+  /*gap: 30px; */
 
 }
 .heading {
   /*text-transform: uppercase; */
   font-family: "Elsie", serif;
-  font-size: 40px;
-  color: black;
-  padding: 20px;
+  font-size: 50px;
+  color: #1b2112;
+  padding: 10px;
   z-index: 1;
   text-align: center;
   margin: 15px 0; 
@@ -57,7 +57,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: black;
+  background-color: #1b2112;
   transform: translateX(-50%);
 }
 
