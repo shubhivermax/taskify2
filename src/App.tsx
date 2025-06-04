@@ -26,9 +26,15 @@ const App: React.FC = ()=> {
   return (
     <div className="App">
       <div className="heading">Taskify</div>
-      <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
-      <ToDoList todos={todos} setTodos={setTodos} />
-      <WeatherDisplay />
+      <div className="main-container">
+        <div className="left-column">
+          <WeatherDisplay />
+        </div>
+        <div className="right-column">
+          <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
+          <ToDoList todos={todos} setTodos={setTodos} />
+        </div>
+      </div>
     </div>
   );
 }
