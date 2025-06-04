@@ -6,6 +6,7 @@ import InputFeild from './components/InputFeild.tsx'
 import { Todo } from './model.ts'
 import ToDoList from './components/ToDoList.tsx'
 import WeatherDisplay from './components/weatherdisplay.tsx'
+import ProgressBar from './components/ProgressBar.tsx'
 
 
 const App: React.FC = ()=> {
@@ -29,6 +30,7 @@ const App: React.FC = ()=> {
       <div className="main-container">
         <div className="left-column">
           <WeatherDisplay />
+          <ProgressBar todos={todos} />
         </div>
         <div className="right-column">
           <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>

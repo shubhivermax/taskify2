@@ -59,6 +59,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-right: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .right-column {
