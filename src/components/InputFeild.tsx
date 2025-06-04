@@ -25,8 +25,8 @@ const InputFeild = ({ todo, setTodo,handleAdd}: Props) => {
           (e)=>setTodo(e.target.value)
       
         }
-        placeholder ='Enter...' className='input_box'/>
-        <button className='input_submit' type='submit'>Go</button>
+        placeholder ='Enter a task' className='input_box'/>
+        <button className='input_submit' type='submit'>Add</button>
     </form>
   )  
 }

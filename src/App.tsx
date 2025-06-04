@@ -7,7 +7,7 @@ import { Todo } from './model.ts'
 import ToDoList from './components/ToDoList.tsx'
 import WeatherDisplay from './components/weatherdisplay.tsx'
 import ProgressBar from './components/ProgressBar.tsx'
-
+import Clock from './components/Clock.tsx'
 
 const App: React.FC = ()=> {
 
@@ -17,7 +17,7 @@ const App: React.FC = ()=> {
   const handleAdd = (e: React.FormEvent) =>{
     e.preventDefault();
     if(todo){
-      setTodos([...todos,{id: Date.now(),todo:todo,isDone:false}]);
+      setTodos([...todos,{id: Date.now(),todo:todo,isDone:false,createdAt: new Date().toISOString()}]);
       setTodo("");
     }
 
@@ -26,11 +26,15 @@ const App: React.FC = ()=> {
   console.log(todos);
   return (
     <div className="App">
-      <div className="heading">Taskify</div>
+      <div className="heading container">
+      <div className="heading">Let's Get Things Done!</div>
+      <Clock />
+      </div>
       <div className="main-container">
         <div className="left-column">
           <WeatherDisplay />
           <ProgressBar todos={todos} />
+          
         </div>
         <div className="right-column">
           <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>

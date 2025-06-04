@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Eco ToDo New Tab",
+  "version": "1.0",
+  "description": "A mindful to-do list with weather, progress tracking, and sustainability tips.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
