@@ -8,6 +8,7 @@ import ToDoList from './components/ToDoList.tsx'
 import WeatherDisplay from './components/weatherdisplay.tsx'
 import ProgressBar from './components/ProgressBar.tsx'
 import Clock from './components/Clock.tsx'
+import IntentionBox from './components/Intention.tsx'
 
 const App: React.FC = ()=> {
 
@@ -54,6 +55,10 @@ const App: React.FC = ()=> {
           <ToDoList todos={todos} setTodos={setTodos} />
         </div>
       </div>
+      <IntentionBox />
+      <div className='foryou'>Made with -`♡´- for my friends.</div>
+      <div className='by'>Built by Shubhi.</div>
+      <div className='cute'>❀˖♡.ᗢ･</div>
     </div>
   );
 }

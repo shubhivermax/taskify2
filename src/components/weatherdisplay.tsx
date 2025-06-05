@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './styles.css';
-import leafImage from '../assets/leaf.png';
-
 
 //test new commit
 // Test commit for GitHub email fix
@@ -56,19 +53,14 @@ const WeatherDisplay = () => {
   if (error) return <div>{error}</div>;
 
   return (
-    <div className="weatherwidget">
-      <h2 className="weatherhead">Weather in {weather.name}</h2>
-      <p className='weathertext'>⋆.ೃ࿔⛈༄ Temperature: {weather.main.temp} °C</p>
-      <p className='weathertext'> ˘꒷꒦˘꒷Humidity: {weather.main.humidity}%</p>
-      <p className="weathertext">⋆｡°•☁︎Condition: {weather.weather[0].description}</p>
-      
+    <div className="p-4 rounded-lg bg-blue-100 text-blue-900 shadow-md max-w-xs">
+      <h2 className="text-lg font-semibold mb-2">Weather in {weather.name}</h2>
+      <p className='weathertext'>🌡 Temperature: {weather.main.temp} °C</p>
+      <p className='weathertext'>💧 Humidity: {weather.main.humidity}%</p>
+      <p className='weathertext'>☁️ Condition: {weather.weather[0].description}</p>
+      <img src="/cloud.png" alt="Cloud" style={{ width: "120px", height: "120px", alignContent:'center' }} />
     </div>
   );
 };
-
-/*
-style={{ width: "120px", height: "120px", display: "block", margin: "0 auto" }}
-<img src={leafImage} alt="Leaf" className="leafy" style={{ width: "120px", height: "120px", display: "block", margin: "0 auto" }}/> 
-*/
 
 export default WeatherDisplay;

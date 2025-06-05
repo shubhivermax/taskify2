@@ -10,7 +10,7 @@
     width: 100%;
     font-family: "Elsie", serif;
     border-radius: 50px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     font-size: 25px;
     border: none;
     transition: 0.2s;
@@ -41,8 +41,8 @@
 
 .input_submit{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 37px;
+    height: 37px;
     margin: 12 px;
     border-radius: 50px;
     right: 10px;
@@ -147,7 +147,7 @@ input::placeholder {
 
 .progress-fill {
   height: 100%;
-  background-color:  #9caf6c;
+  background-color:  #63753b;
   transition: width 0.3s ease-in-out;
 }
 
@@ -165,3 +165,62 @@ input::placeholder {
   padding-bottom: 60px;
 }
 
+.intention-box {
+  text-align: center;
+  padding: 20px 30px;
+  
+    
+}
+
+.stored-intention {
+  /*background: #4c5a31;
+  border: 1px solid #a0d5a4;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 1.1em;*/
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+} 
+
+.set-intention input {
+  font-family: "Elsie", serif;
+  color:  #63753b;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 25px;
+  outline: none;
+  padding: 10px 0;
+  background: transparent;
+  transition: border-bottom 0.2s ease;
+}
+.set-intention input::placeholder{
+    color: #63753b;
+    font-size: 16px;
+}
+.set-intention input:focus {
+  border-bottom: 2px solid  #a0d5a4;
+}
+
+
+.setbutton{
+    margin-left: 10px;
+    padding: 7px 14px;
+    margin-top: 10px;
+    margin: 12 px;
+    border-radius: 50px;
+    right: 10px;
+    border: none;
+    font-family: "Elsie", serif;
+    font-size: 15px;
+    background-color:  transparent;
+    color: black;
+    transition: 0.2s all;
+    border: 1px solid black;
+    
+
+}
+
+.setbutton:hover{
+    background-color: #d3ddb9;
+    color: black;
+    transform: scale(0.922);
+}
