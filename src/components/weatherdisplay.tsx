@@ -52,15 +52,17 @@ const WeatherDisplay = () => {
   if (loading) return <div>Loading weather...</div>;
   if (error) return <div>{error}</div>;
 
-  return (
-    <div className="p-4 rounded-lg bg-blue-100 text-blue-900 shadow-md max-w-xs">
-      <h2 className="text-lg font-semibold mb-2">Weather in {weather.name}</h2>
-      <p className='weathertext'>🌡 Temperature: {weather.main.temp} °C</p>
-      <p className='weathertext'>💧 Humidity: {weather.main.humidity}%</p>
-      <p className='weathertext'>☁️ Condition: {weather.weather[0].description}</p>
-      <img src="/cloud.png" alt="Cloud" style={{ width: "120px", height: "120px", alignContent:'center' }} />
+ return (
+    <div className="weatherwidget">
+      <div className="weather-content">
+        <h2 className="weatherhead">Weather in {weather.name}</h2>
+        <p className='weathertext'>⋆.ೃ࿔⛈༄ Temperature: {weather.main.temp} °C</p>
+        <p className='weathertext'> ˘꒷꒦˘꒷Humidity: {weather.main.humidity}%</p>
+        <p className="weathertext">⋆｡°•☁︎Condition: {weather.weather[0].description}</p>
+      </div>
     </div>
   );
 };
+
 
 export default WeatherDisplay;
