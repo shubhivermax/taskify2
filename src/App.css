@@ -21,6 +21,8 @@ body {
   width: 100%;
   font-family: "Elsie", serif;
   font-size: 20px;
+  position: relative;
+  justify-content: space-between; /* This will push content to top and footer to bottom */
 }
 .heading-container{
   display: flex;
@@ -48,6 +50,8 @@ body {
   gap: 2rem;
   padding: 0 1rem;
   position: relative;
+  margin-bottom: 40px;
+  flex: 1; /* This allows the main content to take up available space */
 }
 
 .main-container::after {
@@ -96,16 +100,26 @@ body {
   }
 }
 
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
 .foryou{
   font-size: 11px;
+  margin: 2px 0;
 }
 
 .by{
   font-size: 11px;
-
+  margin: 2px 0;
 }
 
 .cute{
-  font-size:11px;
-  padding-bottom: 5px;
+  font-size: 11px;
+  margin: 2px 0;
 }

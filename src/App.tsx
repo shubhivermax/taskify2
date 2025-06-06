@@ -56,9 +56,11 @@ const App: React.FC = ()=> {
         </div>
       </div>
       <IntentionBox />
-      <div className='foryou'>Made with -`♡´- for my friends.</div>
-      <div className='by'>Built by Shubhi.</div>
-      <div className='cute'>❀˖♡.ᗢ･</div>
+      <div className="footer-container">
+        <div className='foryou'>Made with -`♡´- for my friends.</div>
+        <div className='by'>Built by Shubhi.</div>
+        <div className='cute'>❀˖♡.ᗢ･</div>
+      </div>
     </div>
   );
 }
